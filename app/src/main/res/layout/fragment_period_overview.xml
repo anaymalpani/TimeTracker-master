@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FragmentHeaderHeight"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/previousImageView"
+            style="?android:attr/buttonBarButtonStyle"
+            android:scaleType="fitCenter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_hardware_keyboard_arrow_left_black"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textSize="@dimen/FragmentTitleText"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/nextImageView"
+            style="?android:attr/buttonBarButtonStyle"
+            android:scaleType="fitCenter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_hardware_keyboard_arrow_right_black"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/periodsListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/totalLabelTextView"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:text="@string/total"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical|right"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalBillableDurationColumn"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="  "
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:gravity="center_vertical|end"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Urenregistratie</string>
+
+    <string name="action_week_overview">Totalen per week</string>
+    <string name="action_month_overview">Totalen per maand</string>
+
+    <string name="add_timerecord_title">Tijd toevoegen</string>
+    <string name="edit_timerecord_title">Tijd wijzigen</string>
+
+    <string name="timerecord_from_label">Van:</string>
+    <string name="timerecord_to_label">Tot:</string>
+    <string name="timerecord_break_label">Pauze:</string>
+
+    <string name="today">Vandaag:</string>
+    <string name="this_week">Deze week:</string>
+
+    <string name="break_in_minutes">Pauze in minuten</string>
+    <string name="note">Notitie</string>
+
+    <string name="no_records_to_delete_on_day">Er is niets te verwijderen op de geselecteerde dag</string>
+    <string name="no_records_to_delete_in_period">Er is niets te verwijderen in de geselecteerde periode</string>
+
+    <string name="confirm">Bevestigen a.u.b.</string>
+    <string name="delete_all_on_day">Alles verwijderen van %1$s?</string>
+    <string name="delete_all_in_period">Alles verwijderen van\n%1$s\ntot en met\n%2$s?</string>
+
+    <string name="checkin">Inklokken</string>
+    <string name="checkout">Uitklokken</string>
+    <string name="checked_in_at">U bent ingeklokt op %1$s om %2$s</string>
+    <string name="checked_out_at">U bent uitgeklokt op %1$s om %2$s</string>
+
+    <string name="no_details_available_because_no_checkin">Er zijn geen details beschikbaar omdat u niet heeft geklokt op de geselecteerde dag</string>
+
+    <string name="delete_this_row">Geselecteerde rij verwijderen?</string>
+
+    <string name="save">Opslaan</string>
+
+    <string name="break_minutes">%1$d minuten</string>
+
+    <string name="to_date_must_be_later_than_from_date">\&quot;Tot\&quot; moet later zijn dan \&quot;van\&quot;</string>
+    <string name="break_bigger_than_billable_duration">De pauze mag niet (langer dan/gelijk aan) de tijdsduur zijn</string>
+
+    <string name="delete">Verwijder</string>
+
+    <string name="confirm_delete">Weet u zeker dat u deze gegevens wilt verwijderen?</string>
+    <string name="timerecord_note_label">Notitie:</string>
+
+    <string name="loading_data">Gegevens verzamelen…</string>
+
+    <string name="export_to_pdf">Opslaan als pdf bestand</string>
+    <string name="create_backup">Maak een backup</string>
+    <string name="restore_backup">Zet een backup terug</string>
+
+    <string name="exporting_backup_progress_dialog">Bezig met het maken van de backup…</string>
+    <string name="export_backup_completed_to_file">Backup bestand opgeslagen: %1$s</string>
+
+    <string name="exporting_pdf_progress_dialog">Bezig met het maken van de pdf…</string>
+    <string name="export_pdf_completed_to_file">Pdf bestand opgeslagen: %1$s</string>
+
+    <string name="importing_progress_dialog">Bezig met het terugzetten van de backup…</string>
+    <string name="importing_progress_dialog_nr_of_timerecords">%d urenregels inlezen uit het backup bestand…</string>
+    <string name="import_completed">De backup is terug gezet</string>
+    <string name="import_failed">Het backup bestand kon niet worden teruggezet</string>
+
+    <string name="export_table_header_date">Datum</string>
+    <string name="export_table_header_from">Van</string>
+    <string name="export_table_header_to">Tot</string>
+    <string name="export_table_header_break">Pauze</string>
+    <string name="export_table_header_duration">Tijdsduur</string>
+    <string name="export_table_header_note">Notitie</string>
+
+    <string name="export_table_minutes">min.</string>
+
+    <string name="export_external_storage_not_available">Kan pdf bestand niet maken omdat externe opslag niet beschikbaar is</string>
+
+    <string name="total">Totaal</string>
+
+    <string name="crashMessageQuestionEmail">Oeps… de applicatie is onverwachts gestopt :-(. Wil je de ontwikkelaar van deze app helpen bij het oplossen van het probleem door ze een e-mail te sturen met de relevante informatie?</string>
+    <string name="add_timerecord">Toevoegen…</string>
+</resources>

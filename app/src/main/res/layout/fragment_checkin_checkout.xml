@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/todaysTotalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/today"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/todaysTotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="   "
+        android:textSize="@dimen/checkedInPeriodTextSize"
+        android:layout_below="@+id/todaysTotalLabelTextView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/pausePlayImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_av_play_circle_outline_blue"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/thisWeeksTotalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/this_week"
+        android:layout_above="@+id/thisWeeksTotalTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/thisWeeksTotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="   "
+        android:textSize="@dimen/checkedInPeriodTextSize"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

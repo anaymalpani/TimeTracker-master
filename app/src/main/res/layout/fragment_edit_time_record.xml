@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:text="@string/edit_timerecord_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/FragmentTitleText" />
+
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="?android:attr/dividerVertical"-->
+        <!--android:layout_below="@+id/timeRecordDetailsTitle"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/buttonbarTop">
+
+        <TableLayout
+            android:id="@+id/editTimeRecordTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="3">
+
+            <TableRow
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fromLabelTextView"
+                    android:text="@string/timerecord_from_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+
+                <TextView
+                    android:id="@+id/fromDateValueTextView"
+                    android:text="xx dd-MM-yyyy"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+
+                <TextView
+                    android:id="@+id/fromTimeValueTextView"
+                    android:text="xx:xx:xx"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin" />
+            </TableRow>
+
+            <TableRow android:layout_height="1px" android:background="?android:attr/dividerVertical"
+                android:layout_width="match_parent">
+                <TextView android:layout_height="1px"
+                    android:layout_width="fill_parent" android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/toLabelTextView"
+                    android:text="@string/timerecord_to_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+
+                <TextView
+                    android:id="@+id/toDateValueTextView"
+                    android:text="xx dd-MM-yyyy"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+
+                <TextView
+                    android:id="@+id/toTimeValueTextView"
+                    android:text="xx:xx:xx"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+            </TableRow>
+
+            <TableRow android:layout_height="1px" android:background="?android:attr/dividerVertical"
+                android:layout_width="match_parent">
+                <TextView android:layout_height="1px"
+                    android:layout_width="fill_parent" android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/breakLabelTextView"
+                    android:text="@string/timerecord_break_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+
+                <TextView
+                    android:id="@+id/breakValueTextView"
+                    android:text="xx minutes"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin" />
+            </TableRow>
+
+            <TableRow android:layout_height="1px" android:background="?android:attr/dividerVertical"
+                android:layout_width="match_parent">
+                <TextView android:layout_height="1px"
+                    android:layout_width="fill_parent" android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/noteLabelTextView"
+                    android:text="@string/timerecord_note_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/noteValueTextView"
+                    android:text="a\nb\nc"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_span="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/editTimeRecordRowTopBottomMargin"
+                    android:layout_marginBottom="@dimen/editTimeRecordRowTopBottomMargin" />
+            </TableRow>
+
+        </TableLayout>
+
+        </ScrollView>
+
+    <View
+        android:id="@+id/buttonbarTop"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical"
+        android:layout_above="@+id/timeRecordDetailsButtonHolder"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/timeRecordDetailsButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+
+        <View android:layout_height="fill_parent"
+            android:layout_width="1dp"
+            android:background="?android:attr/dividerVertical"/>
+
+        <Button
+            android:id="@+id/deleteButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete" />
+
+        <View android:layout_height="fill_parent"
+            android:layout_width="1dp"
+            android:background="?android:attr/dividerVertical"/>
+
+        <Button
+            android:id="@+id/saveTimeRecordButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</RelativeLayout>

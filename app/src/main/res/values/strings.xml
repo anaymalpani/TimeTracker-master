@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Time Tracker</string>
+
+    <string name="action_week_overview">Week totals</string>
+    <string name="action_month_overview">Month totals</string>
+
+    <string name="add_timerecord_title">Add time</string>
+    <string name="edit_timerecord_title">Edit time</string>
+
+    <string name="timerecord_from_label">From:</string>
+    <string name="timerecord_to_label">To:</string>
+    <string name="timerecord_break_label">Break:</string>
+    <string name="timerecord_note_label">Note:</string>
+
+    <string name="today">Today:</string>
+    <string name="this_week">This week:</string>
+
+    <string name="break_in_minutes">Break in minutes</string>
+    <string name="note">Note</string>
+
+    <string name="no_records_to_delete_on_day">There is nothing to delete on the selected day</string>
+    <string name="no_records_to_delete_in_period">There is nothing to delete in the selected period</string>
+
+    <string name="confirm">Please confirm</string>
+    <string name="delete_all_on_day">Delete all on %1$s?</string>
+    <string name="delete_all_in_period">Delete all from\n%1$s\nto\n%2$s?</string>
+
+    <string name="checkin">Checkin</string>
+    <string name="checkout">Checkout</string>
+    <string name="checked_in_at">You checked in at %1$s %2$s</string>
+    <string name="checked_out_at">You checked out at %1$s %2$s</string>
+
+    <string name="no_details_available_because_no_checkin">There are no details available because you have not checked in on the selected date</string>
+
+    <string name="delete_this_row">Delete selected row?</string>
+
+    <string name="save">Save</string>
+
+    <string name="break_minutes">%1$d minutes</string>
+
+    <string name="to_date_must_be_later_than_from_date">\&quot;To\&quot; must be bigger than \&quot;from\&quot;</string>
+    <string name="break_bigger_than_billable_duration">The break may not be longer or equal than the selected period</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete">Are you sure that you want to delete this data?</string>
+
+    <string name="loading_data">Loading data…</string>
+
+    <string name="export_to_pdf">Save to pdf file</string>
+    <string name="create_backup">Create a backup file</string>
+    <string name="restore_backup">Restore from a backup file</string>
+
+    <string name="exporting_backup_progress_dialog">Creating the backup file…</string>
+    <string name="export_backup_completed_to_file">The backup file was successfully saved here: %1$s</string>
+
+    <string name="exporting_pdf_progress_dialog">Creating the pdf…</string>
+    <string name="export_pdf_completed_to_file">The pdf file was successfully saved here: %1$s</string>
+
+    <string name="importing_progress_dialog">Restoring the backup…</string>
+    <string name="importing_progress_dialog_nr_of_timerecords">Read %d timerecords from backup file…</string>
+    <string name="import_completed">The backup was successfully restored</string>
+    <string name="import_failed">Backup file could not be restored successfully</string>
+
+    <string name="export_table_header_date">Date</string>
+    <string name="export_table_header_from">From</string>
+    <string name="export_table_header_to">To</string>
+    <string name="export_table_header_break">Break</string>
+    <string name="export_table_header_duration">Duration</string>
+    <string name="export_table_header_note">Note</string>
+
+    <string name="export_table_minutes">mins.</string>
+
+    <string name="export_external_storage_not_available">Unable to create pdf because external storage is not available</string>
+
+    <string name="total">Total</string>
+    <string name="crashMessageQuestionEmail">Oops… the application stopped unexpectedly :-(. Do you want to help the developers of this app to fix the problem by sending them an e-mail containing the relevant information?</string>
+    <string name="add_timerecord">Add…</string>
+
+</resources>
