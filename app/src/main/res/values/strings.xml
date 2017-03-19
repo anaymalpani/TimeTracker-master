@@ -49,6 +49,9 @@
     <string name="export_to_pdf">Save to pdf file</string>
     <string name="create_backup">Create a backup file</string>
     <string name="restore_backup">Restore from a backup file</string>
+    <string name="about_us">About Alacritic Inc.</string>
+    <string name="dialog_title">Alacritic Inc.</string>
+    <string name="dialog_about">visit: www.alacritic.com</string>
 
     <string name="exporting_backup_progress_dialog">Creating the backup file…</string>
     <string name="export_backup_completed_to_file">The backup file was successfully saved here: %1$s</string>

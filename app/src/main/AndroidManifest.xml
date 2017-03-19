@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="nl.wiegman.timetracker" >
+    package="com.alacritic.timetracker">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -20,7 +20,9 @@
         <meta-data android:name="DATABASE" android:value="timetracker.db" />
         <meta-data android:name="VERSION" android:value="0" />
         <meta-data android:name="QUERY_LOG" android:value="true" />
-        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="nl.wiegman.timetracker.domain"/>
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.alacritic.timetracker.domain" />
 
         <activity
             android:name=".MainActivity"
@@ -32,17 +34,17 @@
         </activity>
 
         <activity
-            android:name="nl.wiegman.timetracker.SendLogActivity"
-            android:theme="@android:style/Theme.Holo.Dialog"
+            android:name="com.alacritic.timetracker.SendLogActivity"
             android:textAppearance="@android:style/TextAppearance.Large"
+            android:theme="@android:style/Theme.Holo.Dialog"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
-                <action android:name="nl.wiegman.timetracker.SEND_LOG" />
+                <action android:name="com.alacritic.timetracker.SEND_LOG" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <receiver android:name="nl.wiegman.timetracker.widget.CheckInCheckOutWidgetProvider">
+        <receiver android:name="com.alacritic.timetracker.widget.CheckInCheckOutWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="nl.timetracker.intent.action.toggle_checkin_checkout" />

@@ -25,10 +25,10 @@ dependencies {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.0'
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "nl.wiegman.timetracker"
+        applicationId "com.alacritic.timetracker"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
